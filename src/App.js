@@ -42,7 +42,7 @@ function App() {
         <Navbar collapseOnSelect bg="light" expand="md" className="mb-3">
           <LinkContainer to="/">
             <Navbar.Brand className="font-weight-bold text-muted">
-              Scratch
+              Post It
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle />
@@ -50,8 +50,8 @@ function App() {
             <Nav activeKey={window.location.pathname}>
               {isAuthenticated ? (
                 <>
-                  <LinkContainer to="/settings">
-                    <Nav.Link>Settings</Nav.Link>
+                  <LinkContainer to="/reservas">
+                    <Nav.Link>Reservas</Nav.Link>
                   </LinkContainer>
                   <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
                 </>

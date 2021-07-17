@@ -1,9 +1,37 @@
-.Home .lander {
-    padding: 80px 0;
-    text-align: center;
+.Home {
+  height: 100%;
+  position: relative;
+}
+
+  .lander {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  
-  .Home .lander h1 {
+
+  .lander h1, .text-muted {
     font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+    align-self: center;
+  }
+
+  ul.a { 
+    list-style-type: circle;
+  }
+
+  .conteudo {
+    transition: height 1s ease;
+    overflow: hidden;
+  }
+
+  button {
+    background-color: #ffeb99;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
+  button:hover {
+    background-color: #ffcc00;
   }
