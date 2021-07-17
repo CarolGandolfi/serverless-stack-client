@@ -10,9 +10,6 @@ export default function Home() {
         <h1>Post It</h1>
         <p className="text-muted">Reserve seu Post It</p>
         <button onClick={() => setShowInfo(!showInfo)}>{showInfo ? "Menos informações": "Mais informações" }</button>
-        {/* {
-          showInfo
-          && ( */}
             <div className="conteudo" style={{height: showInfo ? 400 : 0, marginTop: showInfo ? 8 : 0}}>
               <p>Aqui você poderá personalizar seus blocos de Post-It do seu jeito!</p>
               <ul>
@@ -28,8 +25,6 @@ export default function Home() {
               </ul>
               <p>Depois de reservar seu pedido, ele será separado e disponibilizado para retirada em nossa loja!</p>
             </div>
-          {/* )
-        } */}
       </div>  
     );
   }

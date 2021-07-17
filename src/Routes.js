@@ -31,7 +31,6 @@ export default function Routes() {
       <AuthenticatedRoute exact path="/requests/:id">
         <Requests />
       </AuthenticatedRoute>
-      {/* Finally, catch all unmatched routes */}
       <Route>
         <NotFound />
       </Route>
